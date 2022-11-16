@@ -1,11 +1,9 @@
 import React from "react";
-function Input() {
+function Input(props) {
   return (
     <div className="inputs-container">
-      <label for="height">Height</label>
-      <input id="height" type="text" />
-      <label for="weight">Weight</label>
-      <input id="weight" type="text" />
+      <label for={props.for}>{props.label}</label>
+      <input id={props.id} type="text" onChange={props.handleChange} />
     </div>
   );
 }
