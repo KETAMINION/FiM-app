@@ -47,12 +47,14 @@ let judgement = ""
       label="Height"
       id="height"
       handleChange={handleChangeHeight}
+      placeholder="in CM"
     />,
     <Input
       for="weight"
       label="Weight"
       id="weight"
       handleChange={handleChangeWeight}
+      placeholder="in KG"
     />,
     <Button calculate={calculateBmi} />,
     <Result bmi={bmi} judgement={judgement}/>,
