@@ -1,9 +1,9 @@
 import React from "react";
-function Result() {
+function Result(props) {
   return (
     <div className="result-container">
-      <p></p>
-      <p></p>
+      <p>Your BMI is:{props.bmi}.</p>
+      <p>You are {props.judgement}.</p>
     </div>
   );
 }
